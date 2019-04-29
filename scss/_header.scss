@@ -1,0 +1,19 @@
+/* Header image */
+section.sec1 {
+  width: 100%;
+  height: 100vh;
+  background: url(/images/image-blue-sky-1054218.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+.content p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+}

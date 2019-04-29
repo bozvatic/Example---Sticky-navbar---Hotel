@@ -1,0 +1,119 @@
+@import 'navigation';
+@import 'header';
+@import 'footer';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand;
+  z-index: -1;
+}
+
+section.slika1 {
+  text-align: center;
+  width: 80%;
+  height: 90vh;
+  background: url(/images/pexels-photo-261102.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0 auto; /* Slika iznad footera - centriranje u div-u */
+  position: relative;
+}
+
+.services {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.okvir {
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  /*
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    Drugi nacin poravnanja div-a unutar drugog div-a
+    */
+  padding: 30px;
+}
+
+.p-text {
+  color: #737373;
+  margin-bottom: 3rem;
+}
+
+.room {
+  color: black;
+  border: 1px solid black;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.room:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+  nav {
+    display: flex;
+    height: 100px;
+    padding: 10px 40px;
+  }
+  nav ul {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    height: 100px;
+    padding: 10px 5px;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li a {
+    line-height: 80px;
+    padding: 12px 20px;
+  }
+  nav .logo {
+    padding: 22px 20px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section.slika1 {
+    padding: 0 30px;
+  }
+  nav {
+    display: block;
+    height: 100px;
+    padding: 10px 0px;
+  }
+  nav ul {
+    display: none;
+    text-align: center;
+    float: none;
+  }
+  nav .logo {
+    display: block;
+    width: 100%;
+  }
+  nav .logo i {
+    display: block;
+    float: right;
+    /* color: white; */
+  }
+  .active2 {
+    display: block;
+  }
+}
